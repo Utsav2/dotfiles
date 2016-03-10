@@ -30,8 +30,8 @@ values."
      emacs-lisp
      git
      markdown
-     haskell
      javascript
+     haskell
      ;; org
      ;; (shell :variables
      ;;        shell-default-height 30
@@ -41,9 +41,7 @@ values."
      version-control
      )
    ;; List of additional packages that will be installed without being
-   ;; wrapped in a layer. If you need some configuration for these
-   ;; packages, then consider creating a layer. You can also put the
-   ;; configuration in `dotspacemacs/user-config'.
+   ;; wrapped in a layer. If you need some configuration for these ;; packages, then consider creating a layer. You can also put the ;; configuration in `dotspacemacs/user-config'.
    dotspacemacs-additional-packages '()
    ;; A list of packages and/or extensions that will not be install and loaded.
    dotspacemacs-excluded-packages '()
@@ -261,9 +259,14 @@ layers configuration. You are free to put any user code."
   (define-key evil-normal-state-map (kbd "C-l") (kbd "SPC w l"))
   (define-key evil-normal-state-map (kbd "C-r") (kbd "SPC k C-r"))
 
+  (autoload 'haskell-indentation-enable-show-indentations "haskell-indentation")
+  (autoload 'haskell-indentation-disable-show-indentations "haskell-indentation")
   "Redo - Control R"
   (define-key evil-normal-state-map (kbd "C-r") (kbd "SPC k C-r"))
   )
+
+
+
 
 ;; Do not write anything past this comment. This is where Emacs will
 ;; auto-generate custom variable definitions.

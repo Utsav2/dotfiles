@@ -12,6 +12,7 @@
   status = auto
   branch = auto
 [alias]
+  cl = clone
   ci = commit
   co = checkout
   st = status

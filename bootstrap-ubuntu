@@ -1,0 +1,13 @@
+cat <<PACKAGES | sudo xargs apt-get install -y
+git
+vim
+python
+python-dev
+zsh
+unity-tweak-tool
+calibre
+ghc
+libgmp3-dev libglc-dev freeglut3 freeglut3-dev
+cabal-install
+tmux
+PACKAGES

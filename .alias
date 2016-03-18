@@ -1,0 +1,28 @@
+alias up='cd ..'
+alias pdf='apvlv'
+alias d='cd ~/Downloads'
+alias p='cd ~/p'
+alias t='cd /tmp'
+alias open='xdg-open' 
+alias q='exit'
+alias :q='exit'
+alias :wq='exit'
+alias e='emacs . &'
+alias sys-update='yaourt -Syyu --noconfirm --aur'
+alias igrep='grep -i'
+
+md() {
+  markdown "$@" | lynx -stdin
+}
+
+search() {
+  google-chrome "google.com/search?q="$1 &>/dev/null
+}
+
+
+export PATH="/root/.gem/ruby/2.3.0/bin:$PATH"
+export PATH="/home/utsav/.cabal/bin:$PATH"
+export PATH="/home/utsav/Downloads/clion-1.2.4:$PATH"
+
+export NVM_DIR="/home/utsav/.nvm"
+# [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm

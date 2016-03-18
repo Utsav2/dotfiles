@@ -26,5 +26,6 @@
   la = log --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%ci) %C(bold blue)<%an>%Creset' --abbrev-commit --all --graph
   a  = add
   cp = cherry-pick
+  ri = rebase --interactive
 [core]
   editor = 'vim'

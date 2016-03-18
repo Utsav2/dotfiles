@@ -3,6 +3,7 @@ git
 vim
 python
 python-dev
+python-pip
 zsh
 unity-tweak-tool
 calibre
@@ -10,4 +11,6 @@ ghc
 libgmp3-dev libglc-dev freeglut3 freeglut3-dev
 cabal-install
 tmux
+subversion
+exuberant-ctags
 PACKAGES

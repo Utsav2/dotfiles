@@ -4,6 +4,9 @@ set expandtab
 set tabstop=2
 set shiftwidth=2
 
+" local vimrc"
+set exrc
+
 set number
 set autoindent
 
@@ -45,6 +48,12 @@ Plugin 'dag/vim2hs'
 
 Plugin 'christoomey/vim-tmux-navigator'
 
+Plugin 'rking/ag.vim'
+
+Plugin 'vim-scripts/c.vim'
+
+Plugin 'ctrlpvim/ctrlp.vim'
+
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
 filetype plugin indent on    " required
@@ -56,6 +65,5 @@ filetype plugin indent on    " required
 " :PluginInstall    - installs plugins; append `!` to update or just :PluginUpdate
 " :PluginSearch foo - searches for foo; append `!` to refresh local cache
 " :PluginClean      - confirms removal of unused plugins; append `!` to auto-approve removal
-"
 " see :h vundle for more details or wiki for FAQ
 " Put your non-Plugin stuff after this line

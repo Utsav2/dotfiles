@@ -8,8 +8,10 @@ alias q='exit'
 alias :q='exit'
 alias :wq='exit'
 alias e='emacs . &'
+alias studio='~/Downloads/android-studio/bin/studio.sh'
 alias sys-update='yaourt -Syyu --noconfirm --aur'
 alias igrep='grep -i'
+alias g='git'
 
 md() {
   markdown "$@" | lynx -stdin

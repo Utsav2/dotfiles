@@ -31,5 +31,11 @@ export PATH="/root/.gem/ruby/2.3.0/bin:$PATH"
 export PATH="/home/utsav/.cabal/bin:$PATH"
 export PATH="/home/utsav/Downloads/clion-1.2.4:$PATH"
 
+export GOPATH="/home/utsav/go"
+export EDITOR="vim"
+
 export NVM_DIR="/home/utsav/.nvm"
 # [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
+
+export GOOGLE_OAUTH2_CLIENT_ID="202451074493-8n30990e4ovb87vgcadcr3afdf91q1cs.apps.googleusercontent.com"
+GOOGLE_OAUTH2_CLIENT_SECRET="x20PPrTFCAnfzZL5rcjG0Wzq"

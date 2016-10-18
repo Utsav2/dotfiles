@@ -1,11 +1,4 @@
 syntax on
-filetype off
-set expandtab
-set tabstop=2
-set shiftwidth=2
-
-" local vimrc"
-set exrc
 
 set number
 set autoindent
@@ -54,8 +47,13 @@ Plugin 'vim-scripts/c.vim'
 
 Plugin 'ctrlpvim/ctrlp.vim'
 
-Plugin 'ternjs/tern_for_vim'
+Plugin 'Valloric/YouCompleteMe'
 
+Plugin 'embear/vim-localvimrc'
+
+Plugin 'fatih/vim-go'
+
+Plugin 'hynek/vim-python-pep8-indent'
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
 filetype plugin indent on    " required
@@ -69,3 +67,16 @@ filetype plugin indent on    " required
 " :PluginClean      - confirms removal of unused plugins; append `!` to auto-approve removal
 " see :h vundle for more details or wiki for FAQ
 " Put your non-Plugin stuff after this line
+"
+"
+function! SetupPython()
+    " Here, you can have the final say on what is set.  So
+    " fixup any settings you don't like.
+    setlocal softtabstop=2
+    setlocal tabstop=2
+    setlocal shiftwidth=2
+endfunction
+command! -bar SetupPython call SetupPython()
+
+let g:localvimrc_whitelist='/home/utsav/p/slnk/*'
+set runtimepath^=~/.vim/bundle/vim-erlang-runtime/

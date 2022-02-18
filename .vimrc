@@ -37,24 +37,14 @@ Plugin 'git://git.wincent.com/command-t.git'
 " Pass the path to set the runtimepath properly.
 Plugin 'rstacruz/sparkup', {'rtp': 'vim/'}
 " Haskell"
-Plugin 'dag/vim2hs'
-
 Plugin 'christoomey/vim-tmux-navigator'
 
-Plugin 'rking/ag.vim'
-
-Plugin 'vim-scripts/c.vim'
-
 Plugin 'ctrlpvim/ctrlp.vim'
-
-Plugin 'Valloric/YouCompleteMe'
 
 Plugin 'embear/vim-localvimrc'
 
 Plugin 'fatih/vim-go'
 
-Plugin 'hynek/vim-python-pep8-indent'
-" All of your Plugins must be added before the following line
 call vundle#end()            " required
 filetype plugin indent on    " required
 " To ignore plugin indent changes, instead use:
@@ -68,15 +58,3 @@ filetype plugin indent on    " required
 " see :h vundle for more details or wiki for FAQ
 " Put your non-Plugin stuff after this line
 "
-"
-function! SetupPython()
-    " Here, you can have the final say on what is set.  So
-    " fixup any settings you don't like.
-    setlocal softtabstop=2
-    setlocal tabstop=2
-    setlocal shiftwidth=2
-endfunction
-command! -bar SetupPython call SetupPython()
-
-let g:localvimrc_whitelist='/home/utsav/p/slnk/*'
-set runtimepath^=~/.vim/bundle/vim-erlang-runtime/
